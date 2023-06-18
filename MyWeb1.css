@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #333;
+    color: white;
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex; /*가로로 쫘르륵*/
+    flex-direction: column;
+    justify-content: space-between; /*사이 벌려주기*/
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center; /*요소들 가운데 정렬*/
+    padding: 1.2rem 0;
+}
+
+header>p{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header>ul{
+    display: flex;
+}
+
+header>ul>li{
+    list-style-type: none;
+    margin-left: 1.5rem;
+}
+
+header>ul>li>a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding-bottom: 5px;
+    color: white;
+}
+
+header>ul>li>:first-child>a{ /*부모 요소 안 첫 번째 자식*/
+    border-bottom: 5px solid black;
+}
+
+header>ul>li>a:hover{ /*마우스*/
+    border-bottom: 5px solid grey;
+}
+@media screen and(max-width : 600px) {
+    header{
+        flex-direction: column;
+    }
+}
+
+section{
+    padding: 0 3rem;
+    text-align: center;
+}
+
+section>p{
+    margin-bottom: 2rem; 
+}
+
+section>p:first-child{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+section>p:last-of-type{ /* 마지막 요소 관여*/
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+section>a{
+    display: block;
+    border: 1px solid black;
+    width: 150px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 10px; /*둥글 하게 깎기*/
+    text-decoration: none;
+    background-color: white;
+}
+
+footer{
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: grey;
+}
+
+footer>a{
+    text-decoration: none;
+    color: white;
+}
